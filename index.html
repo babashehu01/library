@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="script.js" defer></script> -->
+    <title>My library</title>
+</head>
+<body>
+  <h1>My E-Books Library</h1>
+  <!-- Add Dialogue -->
+  <dialog>
+    <form method="dialog">
+      <p>Enter Book Details:</p>
+      <div>
+        <p>
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author" required>
+        </p>
+        <p>
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" required>
+        </p>
+        <p>
+          <label for="pages">Pages</label>
+          <input type="number" name="num_pages" id="num_pages" min="1" required onkeydown =
+          "return event.keyCode !== 69">
+        </p>
+        <p>
+          <label for="rating">Rating</label>
+          <input type="number" name="rating" id="rating" min="0" max="10" required >
+        </p>
+        <p>
+          <label for="read">Read</label>
+          <input type="checkbox" name="read" id="read" value="false">
+        </p>
+      </div>
+      <div>
+        <button id="close" type="button">Cancel</button>
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </dialog>
+  <div class="nav">
+    <input type="search" name="search_book" id="search_book" placeholder="Search..." disabled>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <button id="new-book">+ New Book</button>
+  </div>
+  <div class="books">
+
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
