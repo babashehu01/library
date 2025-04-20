@@ -20,8 +20,8 @@ Objects and Object constructors.
 
 ## 🖼️ Screenshot
 
-![Home view Screenshot](https://github.com/babashehu01/library/blob/main/screenshots/Dialog-view.png)
-![Modal view Screenshot](https://github.com/babashehu01/library/blob/main/screenshots/Home-view.png)
+![Home view Screenshot](https://raw.githubusercontent.com/babashehu01/library/main/screenshots/Home-view.png)
+![Modal view Screenshot](https://raw.githubusercontent.com/babashehu01/library/main/screenshots/Dialog-view.png)
 
 ## 🚀 Getting Started
 
@@ -32,4 +32,5 @@ To run this app locally:
    git clone https://github.com/babashehu01/library.git
    cd library-app
 2. Open index.html in your browser:
+   ```bash
    open index.html
