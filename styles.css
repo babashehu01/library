@@ -1,0 +1,90 @@
+body {
+    background: radial-gradient(
+    circle at center,
+    #F5F3EB 0%,
+    #BFA6A0 50%,
+    #8FAFCB 100%
+  );
+    color: #2E2E2E;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.book {
+    background-color: aliceblue;
+    width: 200px;
+    border-radius: 12px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-right: 12px double #fff;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book div {
+    background-color: #2E2E2E;
+    width: 200px;
+    color: #fff;
+}
+
+.book .buttons {
+    display: flex;
+    background-color: burlywood;
+    align-self: flex-start;
+}
+
+.book .buttons button {
+    flex: 1;
+}
+
+.nav {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav button {
+    margin-left: auto;
+}
+
+.nav input[type="search"] {
+    border-radius: 8px;
+    width: 50%;
+}
+
+button[id="new-book"] {
+    padding: 12px;
+    background-color: #BFA6A0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons button {
+    border-radius: 4px;
+}
+
+.fa-magnifying-glass {
+    align-self: center;
+    margin-left: 2px;
+    width: 1rem;
+}
